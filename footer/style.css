@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+  
+ footer{
+    background-color: rgba(254,145,76,255);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  
+}
+ 
+.rodape-pagina{
+   display: flex;
+}
+ 
+.logo-banco{
+   height: 15vh;
+}
+ 
+.icone-redes{
+   height: 20px;
+
+}
+
+.icones{
+    display: grid;
+    align-items: center;
+    
+}
+ 
+ 
