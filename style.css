@@ -1,215 +1,268 @@
        /* ---------- CONFIGURAÇÕES GERAIS ---------- */
 
-* {
-    margin: 0;
-    padding: 0;
-}
+       * {
+           margin: 0;
+           padding: 0;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
 
-a{
-    text-decoration: none;
-    color: black;
-}
+       a {
+           text-decoration: none;
+           color: black;
+       }
 
-.container {
-    display: grid;
-    grid-template-rows: 10vh 850px 400px 500px 100px 400px 10vh;
+       .container {
+           display: grid;
+           grid-template-rows: 10vh 90vh 50vh 80vh 10vh;
+
+       }
+
+       .formatar {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       /* ---------- HEADER ---------- */
+
+
+       .header-grid {
+           display: grid;
+           grid-template-columns: 15vw 65vw 20vw;
+       }
+
+       .icone {
+           margin-right: 5px;
+           border-radius: 100%;
+           width: 50px;
+           height: 50px;
+       }
+
+       .formatar-header {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: rgba(254, 145, 76, 255);
+           margin-left: 28px;
+       }
+
+       .formatar-meio {
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+
+       .efeito-meio {
+           border: none;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: black;
+           padding: 0;
+           margin: 0;
+           font-size: 18.72px;
+           position: relative;
+           cursor: pointer;
+           transition: all 0.5s ease;
+       }
+
+       /* ---------- HEADER EFEITOS ---------- */
+
+       .efeito {
+           border: none;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: rgba(254, 145, 76, 255);
+           padding: 0;
+           margin: 0;
+           font-size: 22px;
+           position: relative;
+           cursor: pointer;
+           transition: all 0.5s ease;
+       }
+
+       .efeito-1 {
+           background: white;
+       }
+
+       .efeito-1:before {
+           content: '';
+           position: absolute;
+           top: 32px;
+           left: 0px;
+           width: 0px;
+           height: 2.5px;
+           background: rgba(254, 145, 76, 255);
+           transition: all 0.5s ease;
+       }
+
+       .efeito-1:hover::before {
+           width: 100%;
+       }
+
+       .efeito-2:before {
+           content: '';
+           position: absolute;
+           top: 26px;
+           left: 0px;
+           width: 0px;
+           height: 2px;
+           background: rgba(254, 145, 76, 255);
+           transition: all 0.5s ease;
+       }
+
+       .efeito-2:hover::before {
+           width: 100%;
+       }
+
+       .formatar-header:hover {
+           color: white;
+           transition: all 0.8s ease;
+           background-color: rgba(254, 145, 76, 255);
+       }
+
+       /* ---------- PRIMEIRA IMAGEM (JOVEM COM TABLET GENÉRICO NA MÃO) ---------- */
+
+       main {
+           background-image: url(./img/man-ga0496dc0f_1280.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: left;
+           display: grid;
+           grid-template-columns: 2fr 1fr;
+           grid-template-rows: 1fr 2fr;
+       }
+
+       /* ---------- FRASE DE EFEITO GENÉRICA DO BANCO ---------- */
+
+       .frase-de-efeito {
+           font-size: 25px;
+           font-family: Arial, Helvetica, sans-serif;
+           text-align: center;
+           vertical-align: auto;
+           margin: auto;
+           margin-top: 150px;
+       }
+
     
-}
 
-.formatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+       /* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
 
-        /* ---------- HEADER ---------- */
+       .imagem-texto {
+           display: flex;
+           height: 450px;
+           justify-content: flex-start;
+       }
 
-.header-grid {
-    display: grid;
-    grid-template-columns: 15vw 65vw 20vw;
-}
+       .imagem-texto p {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 18px;
+           font-family: Arial, Helvetica, sans-serif;
+           text-align: center;
+           width: 300px;
+           margin-left: 16vw;
+       }
 
-.icone {
-    margin-right: 5px;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-}
+       /* ---------- ÁREA COM PRODUTOS DO BANCO ---------- */
 
-.formatar-header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(254,145,76,255);
-    margin-left: 28px;
-}
+       #titulo-produtos {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 40px;
+           color: rgba(254, 145, 76, 255);
+           text-align: center;
+       }
 
-.formatar-meio {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+       .grid-produtos {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           justify-items: center;
+       }
 
-.efeito-meio {
-    border: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-    padding: 0;
-    margin: 0;
-    font-size: 18.72px;
-    position:relative;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
+       .grid-produtos img {
+           height: 300px;
+           width: 300px;
+       }
 
-        /* ---------- HEADER EFEITOS ---------- */     
+       .produto {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(224, 226, 230);
+           border: solid rgba(254, 145, 76, 255) 3px;
+           border-radius: 20px;
+           border-top-left-radius: 0;
+           border-top-right-radius: 0;
+           width: 300px;
+       }
 
-.efeito {
-    border: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgba(254,145,76,255);
-    padding: 0;
-    margin: 0;
-    font-size: 22px;
-    position:relative;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
+       .titulo-produto {
+           font-weight: bold;
+           margin-top: 5px;
+           grid-column: 9/10;
+           grid-row: 4/5;
+       }
 
-.efeito-1 {
-    background: white;
-}
+       .texto-produto {
+           margin-top: 5px;
+           margin-bottom: 5px;
+           text-align: center;
 
-.efeito-1:before {
-    content: '';
-    position: absolute;
-    top: 32px;
-    left: 0px;
-    width: 0px;
-    height: 2.5px;
-    background: rgba(254,145,76,255);
-    transition: all 0.5s ease;
-}
+       }
 
-.efeito-1:hover::before {
-    width: 100%;
-}
+       .produtos-grid {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr 1fr;
+       }
 
-.efeito-2:before {
-    content: '';
-    position: absolute;
-    top: 26px;
-    left: 0px;
-    width: 0px;
-    height: 2px;
-    background: rgba(254,145,76,255);
-    transition: all 0.5s ease;
-}
+       /* ---------- SIMPLESMENTE O FOOTER ---------- */
 
-.efeito-2:hover::before {
-    width: 100%;
-}
+       footer {
+           display: grid;
+           grid-row: 50vh;
+           background-color: black;
+       }
 
-.formatar-header:hover {
-    color: white;
-    transition: all 0.8s ease;
-    background-color: rgba(254,145,76,255) ;
-}
 
-        /* ---------- PRIMEIRA IMAGEM (JOVEM COM TABLET GENÉRICO NA MÃO) ---------- */
 
-main {
-    background-image:url(./img/man-ga0496dc0f_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-}
 
-        /* ---------- FRASE DE EFEITO GENÉRICA DO BANCO ---------- */
 
-.frase-de-efeito{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    vertical-align: auto;
-    margin: auto;
-    margin-top: 150px;
-}
 
-.caixa-frase-de-efeito{
-    background-color: lightsalmon;
-}
 
-        /* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
 
-.imagem-texto{
-    display: flex;
-    height: 450px;
-    justify-content: flex-start;
-}
+       .titulo {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 48px;
+           color: white;
+           display: flex;
+           justify-content: end;
+           align-items: center;
+           grid-column: 2/5;
+           grid-row: 3/4;
+           
+       }
 
-.imagem-texto p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    width: 300px;
-    margin-left: 16vw;
-}
+       .caixa-frase-de-efeito {
+        background-color: rgba(254, 145, 76, 255);
+        display: grid;
+        grid-row: 3/4;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
 
-        /* ---------- ÁREA COM PRODUTOS DO BANCO ---------- */        
-
-#titulo-produtos{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    color: rgba(254,145,76,255);
-    text-align: center;
-}
-
-.grid-produtos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-}
-
-.grid-produtos img{
-    height: 300px;
-    width: 300px;
-}
-
-.produto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(224, 226, 230);
-    border: solid rgba(254,145,76,255) 3px;
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    width: 300px;
-}
-
-.titulo-produto{
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.texto-produto{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+    .paragrafo {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+        grid-column: 2/5;
+        grid-row: 5/6;
+        color: white;
+    }
     
+.imagem {
+    width: 430px;
+    
+    grid-column: 8/10;
+    grid-row: 3/6;
 }
-
-        /* ---------- SIMPLESMENTE O FOOTER ---------- */
-
-footer {
-    background-color: white;
-}
-
-
