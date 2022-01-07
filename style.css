@@ -1,31 +1,32 @@
+       /* ---------- CONFIGURAÇÕES GERAIS ---------- */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-
-
-main {
-    background-image:url(./img/man-1718099_960_720.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-}
-
-footer {
-    background-color: white;
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 10vh 850px 400px 500px 100px 400px 10vh;
     
 }
 
+.formatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* ---------- HEADER ---------- */
 
 .header-grid {
-    display: grid;
-    grid-template-columns: 15vw 70vw 15vw;
+display: grid;
+grid-template-columns: 15vw 70vw 15vw;
 }
 
 .icone {
@@ -46,17 +47,7 @@ footer {
     margin-bottom: 5px ;
 }
 
-.formatar-header:hover {
-    color: white;
-    transition: all 0.8s ease;
-    background-color: rgba(254,145,76,255) ;
-}
-
-.formatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        /* ---------- HEADER EFEITOS ---------- */     
 
 .efeito {
     border: none;
@@ -87,3 +78,106 @@ footer {
 .efeito-1:hover::before {
     width: 100%;
 }
+
+.formatar-header:hover {
+    color: white;
+    transition: all 0.8s ease;
+    background-color: rgba(254,145,76,255) ;
+}
+
+        /* ---------- PRIMEIRA IMAGEM (JOVEM COM TABLET GENÉRICO NA MÃO) ---------- */
+
+main {
+    background-image:url(./img/man-1718099_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+        /* ---------- FRASE DE EFEITO GENÉRICA DO BANCO ---------- */
+
+.frase-de-efeito{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: auto;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.caixa-frase-de-efeito{
+    background-color: lightsalmon;
+}
+
+        /* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
+
+.imagem-texto{
+    display: flex;
+    height: 450px;
+    justify-content: flex-start;
+}
+
+.imagem-texto p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 300px;
+    margin-left: 16vw;
+}
+
+        /* ---------- ÁREA COM PRODUTOS DO BANCO ---------- */        
+
+#titulo-produtos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgba(254,145,76,255);
+    text-align: center;
+}
+
+.grid-produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.grid-produtos img{
+    height: 300px;
+    width: 300px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 226, 230);
+    border: solid rgba(254,145,76,255) 3px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 300px;
+}
+
+.titulo-produto{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.texto-produto{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+
+        /* ---------- SIMPLESMENTE O FOOTER ---------- */
+
+footer {
+    background-color: white;
+}
+
+
