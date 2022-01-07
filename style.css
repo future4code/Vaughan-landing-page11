@@ -1,32 +1,31 @@
-       /* ---------- CONFIGURAÇÕES GERAIS ---------- */
-
 * {
     margin: 0;
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+
+
+main {
+    background-image:url(./img/man-ga0496dc0f_1280.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: left;
+}
+
+footer {
+    background-color: white;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 10vh 850px 400px 500px 100px 400px 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
     
 }
 
-.formatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-        /* ---------- HEADER ---------- */
 
 .header-grid {
-display: grid;
-grid-template-columns: 15vw 70vw 15vw;
+    display: grid;
+    grid-template-columns: 15vw 65vw 20vw;
 }
 
 .icone {
@@ -37,24 +36,42 @@ grid-template-columns: 15vw 70vw 15vw;
 }
 
 .formatar-header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgba(254,145,76,255);
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 5px ;
-    margin-bottom: 5px ;
+    margin-left: 28px;
+    
 }
 
-        /* ---------- HEADER EFEITOS ---------- */     
+
+.formatar-header:hover {
+    color: white;
+    transition: all 0.8s ease;
+    background-color: rgba(254,145,76,255) ;
+}
+
+
+.formatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formatar-meio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .efeito {
     border: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgba(254,145,76,255);
     padding: 0;
     margin: 0;
-    font-size: 17px;
+    font-size: 22px;
     position:relative;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -67,10 +84,10 @@ grid-template-columns: 15vw 70vw 15vw;
 .efeito-1:before {
     content: '';
     position: absolute;
-    top: 26px;
+    top: 32px;
     left: 0px;
     width: 0px;
-    height: 3px;
+    height: 2.5px;
     background: rgba(254,145,76,255);
     transition: all 0.5s ease;
 }
@@ -79,105 +96,40 @@ grid-template-columns: 15vw 70vw 15vw;
     width: 100%;
 }
 
-.formatar-header:hover {
-    color: white;
-    transition: all 0.8s ease;
-    background-color: rgba(254,145,76,255) ;
+
+.efeito-meio {
+    border: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 18.72px;
+    position:relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-        /* ---------- PRIMEIRA IMAGEM (JOVEM COM TABLET GENÉRICO NA MÃO) ---------- */
-
-main {
-    background-image:url(./img/man-1718099_960_720.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+.efeito-2 {
+    background: white;
 }
 
-        /* ---------- FRASE DE EFEITO GENÉRICA DO BANCO ---------- */
-
-.frase-de-efeito{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    vertical-align: auto;
-    margin: auto;
-    margin-top: 150px;
+.efeito-2:before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background: rgba(254,145,76,255);
+    transition: all 0.5s ease;
 }
 
-.caixa-frase-de-efeito{
-    background-color: lightsalmon;
+.efeito-2:hover::before {
+    width: 100%;
 }
 
-        /* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
-
-.imagem-texto{
-    display: flex;
-    height: 450px;
-    justify-content: flex-start;
-}
-
-.imagem-texto p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    width: 300px;
-    margin-left: 16vw;
-}
-
-        /* ---------- ÁREA COM PRODUTOS DO BANCO ---------- */        
-
-#titulo-produtos{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    color: rgba(254,145,76,255);
-    text-align: center;
-}
-
-.grid-produtos{
+.main-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-rows: 20vh 60vh 20vh;
 }
-
-.grid-produtos img{
-    height: 300px;
-    width: 300px;
-}
-
-.produto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(224, 226, 230);
-    border: solid rgba(254,145,76,255) 3px;
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    width: 300px;
-}
-
-.titulo-produto{
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.texto-produto{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    
-}
-
-        /* ---------- SIMPLESMENTE O FOOTER ---------- */
-
-footer {
-    background-color: white;
-}
-
-
