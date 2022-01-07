@@ -18,7 +18,7 @@
 }
  
 .logo-banco{
-   height: 15vh;
+   height: 10vh;
 }
  
 .icone-redes{
@@ -32,4 +32,38 @@
     
 }
  
- 
+
+.cabecalho-banco{
+   background-color: rgba(254,145,76,255);
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.body-pg2{
+   background-image: url(img/cropped-shot-of-african-american-businessman-paying-with-credit-card-online.jpg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   padding-bottom: 200px;
+   }
+
+main{
+   display: flex;
+   margin: 20px;
+   
+
+}
+
+.card-pedido{
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   padding-bottom: 200px;
+   margin: 150px;
+   margin-top: 100px;
+   justify-content: flex-end;
+}
+
+   
