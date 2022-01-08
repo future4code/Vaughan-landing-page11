@@ -13,7 +13,7 @@
 
        .container {
            display: grid;
-           grid-template-rows: 10vh 90vh 50vh 80vh 10vh;
+           grid-template-rows: 10vh 90vh 50vh 80vh 65vh 10vh;
 
        }
 
@@ -142,14 +142,15 @@
            margin-top: 150px;
        }
 
-    
+
 
        /* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
 
        .imagem-texto {
-           display: flex;
-           height: 450px;
-           justify-content: flex-start;
+           display: grid;
+           grid-template-rows: 4/5;
+           grid-row: 4/5;
+
        }
 
        .imagem-texto p {
@@ -226,12 +227,6 @@
        }
 
 
-
-
-
-
-
-
        .titulo {
            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
            font-size: 48px;
@@ -241,28 +236,178 @@
            align-items: center;
            grid-column: 2/5;
            grid-row: 3/4;
-           
+
        }
 
        .caixa-frase-de-efeito {
-        background-color: rgba(254, 145, 76, 255);
-        display: grid;
-        grid-row: 3/4;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-    }
+           background-color: rgba(254, 145, 76, 255);
+           display: grid;
+           grid-row: 3/4;
+           grid-template-columns: repeat(10, 1fr);
+           grid-template-rows: repeat(10, 1fr);
+       }
 
-    .paragrafo {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 22px;
-        grid-column: 2/5;
-        grid-row: 5/6;
-        color: white;
-    }
-    
-.imagem {
-    width: 430px;
-    
-    grid-column: 8/10;
-    grid-row: 3/6;
-}
+       .paragrafo {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 22px;
+           grid-column: 2/5;
+           grid-row: 5/6;
+           color: white;
+       }
+
+
+
+       #tp {
+           justify-content: inherit;
+       }
+
+       .topico-2 {
+           background-image: url(img/pessoas\ rindo.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: left center;
+           display: grid;
+           grid-template-columns: repeat(10, 1fr);
+           grid-template-rows: repeat(10, 1fr);
+
+       }
+
+       .topico-2 h1 {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 48px;
+           color: white;
+           ;
+           grid-column: 7/11;
+           grid-row: 4/4;
+       }
+
+       .topico-2 p {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 22px;
+           color: rgb(255, 255, 255);
+           grid-column: 7/10;
+           grid-row: 5/8;
+       }
+
+       .final {
+           display: grid;
+           grid-row: 5/6;
+           background-color: rgba(254, 145, 76, 255);
+           grid-template-columns: repeat(15, 1fr);
+           grid-template-rows: repeat(15, 1fr);
+       }
+
+       .titulo-final {
+           display: grid;
+           grid-column: 5/13;
+           grid-row: 2/3;
+           font-size: 42px;
+           color: white;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+       }
+
+
+       .main-card {
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(5, 1fr);
+           grid-column: 2/3;
+           grid-row: 2/3;
+
+       }
+
+       .card {
+           display: grid;
+           grid-column: 2/5;
+           grid-row: 2/5;
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           background-color: white;
+           border-radius: 20px;
+           box-shadow: black 1px 2px 20px;
+       }
+
+       .top-card {
+           font-size: 160%;
+           margin: 25px 5px 0px 12px;
+           grid-column: 1/4;
+           grid-row: 1/1;
+
+       }
+
+       .mid-card {
+           grid-column: 1/4;
+           grid-row: 2/2;
+           ;
+       }
+
+       .bot-card {
+           grid-column: 1/4;
+           grid-row: 3/4;
+       }
+
+       .mid-card input {
+           width: 90%;
+           height: 50%;
+           margin: 20px 0px 0px 12px;
+           font-size: 120%;
+           letter-spacing: 1px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           border-top: none;
+           border-left: none;
+           border-right: none;
+           border-bottom: 1px black solid;
+           outline: none;
+       }
+
+       .bot-card button {
+           font-size: 16px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           width: 90%;
+           height: 50%;
+           margin: 10px;
+           border-radius: 20px;
+           border: none;
+           cursor: pointer;
+       }
+
+       .bot-card button:hover {
+           background-color: rgba(254, 145, 76, 255);
+           transition: all 0.5s ease;
+       }
+
+
+       main h1 {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 70px;
+       }
+
+       .titulo-cor {
+           color: rgba(254, 145, 76, 255);
+       }
+
+       .frase-principal {
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           grid-column: 1/2;
+           grid-row: 2/2;
+           
+       }
+
+       .ano-novo {
+           grid-column: 3/4;
+           margin-left: -50px;
+       }
+
+       .cartao-novo {
+           color: rgba(254, 145, 76, 255);
+           grid-row: 2/3;
+           grid-column: 3/4;
+           
+       }
+
+       .cor-ponto {
+           color: black;
+       }
