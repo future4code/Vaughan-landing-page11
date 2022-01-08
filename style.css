@@ -1,292 +1,637 @@
-/* ---------- CONFIGURAÇÕES GERAIS ---------- */
+       /* ---------- CONFIGURAÇÕES GERAIS ---------- */
 
-* {
-margin: 0;
-padding: 0;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       html {
+           scroll-behavior: smooth;
+       }
+
+       * {
+           margin: 0;
+           padding: 0;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+
+       a {
+           text-decoration: none;
+           color: black;
+       }
+
+       .container {
+           display: grid;
+           grid-template-rows: 10vh 90vh 50vh 80vh 80vh 10vh;
+           grid-template-columns: 100vw;
+
+       }
+
+       .formatar {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       /* ---------- HEADER ---------- */
+
+
+       .header-grid {
+           display: grid;
+           grid-template-columns: 15vw 65vw 20vw;
+       }
+
+       .icone {
+           margin-right: 5px;
+           border-radius: 100%;
+           width: 50px;
+           height: 50px;
+       }
+
+       .formatar-header {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: rgba(254, 145, 76, 255);
+           margin-left: 28px;
+           transition: all 1s ease;
+       }
+
+       .formatar-meio {
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+       }
+
+       .efeito-meio {
+           border: none;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: black;
+           padding: 0;
+           margin: 0;
+           font-size: 18.72px;
+           position: relative;
+           cursor: pointer;
+           transition: all 0.5s ease;
+       }
+
+       /* ---------- HEADER EFEITOS ---------- */
+
+       .efeito {
+           border: none;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: rgba(254, 145, 76, 255);
+           padding: 0;
+           margin: 0;
+           font-size: 22px;
+           position: relative;
+           cursor: pointer;
+           transition: all 0.5s ease;
+       }
+
+       .efeito-1 {
+           background: white;
+       }
+
+       .efeito-1:before {
+           content: '';
+           position: absolute;
+           top: 32px;
+           left: 0px;
+           width: 0px;
+           height: 2.5px;
+           background: rgba(254, 145, 76, 255);
+           transition: all 0.5s ease;
+       }
+
+       .efeito-1:hover::before {
+           width: 100%;
+       }
+
+       .efeito-2:before {
+           content: '';
+           position: absolute;
+           top: 26px;
+           left: 0px;
+           width: 0px;
+           height: 2px;
+           background: rgba(254, 145, 76, 255);
+           transition: all 0.5s ease;
+       }
+
+       .efeito-2:hover::before {
+           width: 100%;
+       }
+
+       .formatar-header:hover {
+           color: white;
+           transition: all 1s ease;
+           background-color: rgba(254, 145, 76, 255);
+       }
+
+       /* ---------- PRIMEIRA IMAGEM (JOVEM COM TABLET GENÉRICO NA MÃO) ---------- */
+
+       main {
+           background-image: url(./img/man-ga0496dc0f_1280.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: left;
+           display: grid;
+           grid-template-columns: 2fr 1fr;
+           grid-template-rows: 1fr 2fr;
+       }
+
+       /* ---------- FRASE DE EFEITO GENÉRICA DO BANCO ---------- */
+
+       .frase-de-efeito {
+           font-size: 25px;
+           font-family: Arial, Helvetica, sans-serif;
+           text-align: center;
+           vertical-align: auto;
+           margin: auto;
+           margin-top: 150px;
+       }
+
+
+
+       /* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
+
+       .imagem-texto {
+           display: grid;
+           grid-template-rows: 4/5;
+           grid-row: 4/5;
+
+       }
+
+       .imagem-texto p {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 18px;
+           font-family: Arial, Helvetica, sans-serif;
+           text-align: center;
+           width: 300px;
+           margin-left: 16vw;
+       }
+
+       /* ---------- ÁREA COM PRODUTOS DO BANCO ---------- */
+
+       #titulo-produtos {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 40px;
+           color: rgba(254, 145, 76, 255);
+           text-align: center;
+       }
+
+       .grid-produtos {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           justify-items: center;
+       }
+
+       .grid-produtos img {
+           height: 300px;
+           width: 300px;
+       }
+
+       .produto {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(224, 226, 230);
+           border: solid rgba(254, 145, 76, 255) 3px;
+           border-radius: 20px;
+           border-top-left-radius: 0;
+           border-top-right-radius: 0;
+           width: 300px;
+       }
+
+       .titulo-produto {
+           font-weight: bold;
+           margin-top: 5px;
+           grid-column: 9/10;
+           grid-row: 4/5;
+       }
+
+       .texto-produto {
+           margin-top: 5px;
+           margin-bottom: 5px;
+           text-align: center;
+
+       }
+
+       .produtos-grid {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: 1fr 1fr;
+       }
+
+       /* ---------- SIMPLESMENTE O FOOTER ---------- */
+
+       footer {
+           display: grid;
+           grid-row: 50vh;
+           background-color: black;
+       }
+
+
+       .titulo {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 48px;
+           color: white;
+           display: flex;
+           justify-content: end;
+           align-items: center;
+           grid-column: 2/5;
+           grid-row: 3/4;
+
+       }
+
+       .caixa-frase-de-efeito {
+           background-color: rgba(254, 145, 76, 255);
+           display: grid;
+           grid-row: 3/4;
+           grid-template-columns: repeat(10, 1fr);
+           grid-template-rows: repeat(10, 1fr);
+       }
+
+       .paragrafo {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 22px;
+           grid-column: 2/5;
+           grid-row: 5/6;
+           color: white;
+       }
+
+
+
+       #tp {
+           justify-content: inherit;
+       }
+
+       .topico-2 {
+           background-image: url(img/pessoas\ rindo.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: left center;
+           background-attachment: fixed;
+           display: grid;
+           grid-template-columns: repeat(10, 1fr);
+           grid-template-rows: repeat(10, 1fr);
+
+       }
+
+       .topico-2 h1 {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 48px;
+           color: white;
+           ;
+           grid-column: 7/11;
+           grid-row: 4/4;
+       }
+
+       .topico-2 p {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 22px;
+           color: rgb(255, 255, 255);
+           grid-column: 7/10;
+           grid-row: 5/8;
+       }
+
+       .final {
+           display: grid;
+           grid-row: 5/6;
+           background-color: rgba(254, 145, 76, 255);
+           grid-template-columns: repeat(16, 1fr);
+           grid-template-rows: repeat(10, 1fr);
+       }
+
+       .titulo-final {
+           display: grid;
+           grid-column: 5/13;
+           grid-row: 2/3;
+           font-size: 42px;
+           color: white;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 45px;
+       }
+
+
+       .main-card {
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(5, 1fr);
+           grid-column: 2/3;
+           grid-row: 2/3;
+
+       }
+
+       .card {
+           display: grid;
+           grid-column: 2/5;
+           grid-row: 2/5;
+           grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           background-color: white;
+           border-radius: 20px;
+           box-shadow: black 1px 2px 20px;
+       }
+
+       .top-card {
+           font-size: 160%;
+           margin: 25px 5px 0px 12px;
+           grid-column: 1/4;
+           grid-row: 1/1;
+
+       }
+
+       .mid-card {
+           grid-column: 1/4;
+           grid-row: 2/2;
+           ;
+       }
+
+       .bot-card {
+           grid-column: 1/4;
+           grid-row: 3/4;
+       }
+
+       .mid-card input {
+           width: 90%;
+           height: 50%;
+           margin: 20px 0px 0px 12px;
+           font-size: 120%;
+           letter-spacing: 1px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           border-top: none;
+           border-left: none;
+           border-right: none;
+           border-bottom: 1px black solid;
+           outline: none;
+       }
+
+       .bot-card button {
+           font-size: 16px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           width: 90%;
+           height: 50%;
+           margin: 10px;
+           border-radius: 20px;
+           border: none;
+           cursor: pointer;
+       }
+
+       .bot-card button:hover {
+           background-color: rgba(254, 145, 76, 255);
+           transition: all 0.5s ease;
+       }
+
+
+       main h1 {
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-size: 70px;
+       }
+
+       .titulo-cor {
+           color: rgba(254, 145, 76, 255);
+       }
+
+       .frase-principal {
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+           grid-column: 1/2;
+           grid-row: 2/2;
+           
+       }
+
+       .ano-novo {
+           grid-column: 3/4;
+           margin-left: -50px;
+       }
+
+       .cartao-novo {
+           color: rgba(254, 145, 76, 255);
+           grid-row: 2/3;
+           grid-column: 3/4;
+           
+       }
+
+       .cor-ponto {
+           color: black;
+       }
+
+       .card-final-1 {
+           box-shadow: 0.2px 1px 10px whitesmoke;
+           border-radius: 15px;
+           grid-column: 5/8;
+           grid-row: 4/9;
+           background-color: whitesmoke;
+       }
+
+       .card-final-2 {
+        box-shadow: 0.2px 1px 10px whitesmoke;
+        border-radius: 15px;
+        background-color: whitesmoke;
+        grid-column: 10/13;
+        grid-row: 4/9;
+    }
+
+    .img-card-f {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .botao-final {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(254, 145, 76, 255);
+        color: white;
+        width: 255px;
+        height: 50px;
+        border: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .efeito-final {
+        border: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        margin-top: 16px;
+        margin-left: 45px;
+        font-size: 25px;
+    }
+
+    .efeito-3 {
+        background: rgba(254, 145, 76, 255);
+    }
+
+    .efeito-3:before {
+        content: '';
+        position: absolute;
+        top: 32px;
+        left: 0px;
+        width: 0px;
+        height: 2.5px;
+        background:white;
+        transition: all 0.5s ease;
+    }
+    .efeito-3:hover::before {
+        width: 100%;
+    }
+
+
+
+    .efeito-4 {
+        background: rgba(254, 145, 76, 255);
+    }
+
+    .efeito-4:before {
+        content: '';
+        position: absolute;
+        top: 32px;
+        left: 0px;
+        width: 0px;
+        height: 2px;
+        background:white;
+        transition: all 0.5s ease;
+    }
+    .efeito-4:hover::before {
+        width: 100%;
+    }
+
+    .posicao {
+        margin-top: -15px;
+    }
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: rgba(254, 145, 76, 255);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
-a {
-text-decoration: none;
-color: black;
+footer img {
+    width: 19%;
+    margin-left: 20px;
 }
 
-.container {
-display: grid;
-grid-template-rows: 10vh 90vh 50vh 80vh 10vh;
-
-}
-
-.formatar {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-/* ---------- HEADER ---------- */
-
-
-.header-grid {
-display: grid;
-grid-template-columns: 15vw 65vw 20vw;
-}
-
-.icone {
-margin-right: 5px;
-border-radius: 100%;
-width: 50px;
-height: 50px;
-}
-
-.formatar-header {
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-display: flex;
-justify-content: center;
-align-items: center;
-color: rgba(254, 145, 76, 255);
-margin-left: 28px;
-}
-
-.formatar-meio {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-
-.efeito-meio {
-border: none;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: black;
-padding: 0;
-margin: 0;
-font-size: 18.72px;
-position: relative;
-cursor: pointer;
-transition: all 0.5s ease;
-}
-
-/* ---------- HEADER EFEITOS ---------- */
-
-.efeito {
-border: none;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: rgba(254, 145, 76, 255);
-padding: 0;
-margin: 0;
-font-size: 22px;
-position: relative;
-cursor: pointer;
-transition: all 0.5s ease;
-}
-
-.efeito-1 {
-background: white;
-}
-
-.efeito-1:before {
-content: '';
-position: absolute;
-top: 32px;
-left: 0px;
-width: 0px;
-height: 2.5px;
-background: rgba(254, 145, 76, 255);
-transition: all 0.5s ease;
-}
-
-.efeito-1:hover::before {
-width: 100%;
-}
-
-.efeito-2:before {
-content: '';
-position: absolute;
-top: 26px;
-left: 0px;
-width: 0px;
-height: 2px;
-background: rgba(254, 145, 76, 255);
-transition: all 0.5s ease;
-}
-
-.efeito-2:hover::before {
-width: 100%;
-}
-
-.formatar-header:hover {
-color: white;
-transition: all 0.8s ease;
-background-color: rgba(254, 145, 76, 255);
-}
-
-/* ---------- PRIMEIRA IMAGEM (JOVEM COM TABLET GENÉRICO NA MÃO) ---------- */
-
-main {
-background-image: url(./img/man-ga0496dc0f_1280.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: left;
-display: grid;
-grid-template-columns: 2fr 1fr;
-grid-template-rows: 1fr 2fr;
-}
-
-/* ---------- FRASE DE EFEITO GENÉRICA DO BANCO ---------- */
-
-.branco{
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-size: 16px;
 }
 
-.branco:hover{
-    color: orangered;
+.icone-footer {
+    width: 30%;
 }
 
-.caixa-frase-de-efeito {
-background-color: rgba(254, 145, 76, 255);
-display: grid;
-grid-row: 3/4;
-grid-template-columns: repeat(10, 1fr);
-grid-template-rows: repeat(10, 1fr);
-}
-
-.frase-de-efeito {
-font-size: 25px;
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-vertical-align: auto;
-margin: auto;
-margin-top: 150px;
-}
-
-.titulo {
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 48px;
-color: white;
-display: flex;
-justify-content: end;
-align-items: center;
-grid-column: 2/5;
-grid-row: 3/4;
-text-decoration: underline;
-}
-
-.paragrafo {
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 22px;
-grid-column: 2/5;
-grid-row: 5/6;
-color: white;
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* ---------- SEÇÃO COM IMAGEM DE PESSOAS GENÉRICAS RINDO E TEXTO ---------- */
 
-.imagem-texto {
-display: flex;
-height: 450px;
-justify-content: flex-start;
+@media screen and  (max-device-width: 900px) {
+    .header-grid {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .formatar-meio {
+        display: none;
+    }
+
+    .formatar {
+        margin-right: 30px;
+    }
+
+    .ano-novo {
+        display: none;
+    }
+
+    .cartao-novo {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caixa-frase-de-efeito h1 {
+        grid-column: 2/10;
+    }
+
+    .caixa-frase-de-efeito p {
+        grid-column: 2/10;
+    }
+
+    .topico-2 h1 {
+        grid-column: 3/8;
+        grid-row: 3/4;
+    }
+    .topico-2 p {
+        grid-column: 3/10;
+        grid-row: 4/10;
+    }
+
+    .topico-2 {
+        height: 50vh;
+    }
+
+    .final {
+        height: 90vh;
+    }
+    
+    .titulo-final {
+        grid-column:2/16;
+    }
+
+    .container {
+        grid-template-rows: 10vh 90vh 50vh 50vh 100vh;
+        background-size: cover;
+    }
+
+    .card-final-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2/8;
+        grid-row: 4/7;
+
+    }
+
+    .card-final-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 10/16;
+        grid-row: 4/7;
+    }
+
+    .efeito-final {
+        display: none;
+    }
 }
 
-.imagem-texto p {
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 18px;
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-width: 300px;
-margin-left: 16vw;
-}
-
-/* ---------- ÁREA COM PRODUTOS DO BANCO ---------- */
-
-#titulo-produtos {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 40px;
-color: rgba(254, 145, 76, 255);
-text-align: center;
-}
-
-.grid-produtos {
-display: grid;
-grid-template-columns: 1fr 1fr;
-justify-items: center;
-}
-
-.grid-produtos img {
-height: 300px;
-width: 300px;
-}
-
-.produto {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(224, 226, 230);
-border: solid rgba(254, 145, 76, 255) 3px;
-border-radius: 20px;
-border-top-left-radius: 0;
-border-top-right-radius: 0;
-width: 300px;
-}
-
-.titulo-produto {
-font-weight: bold;
-margin-top: 5px;
-grid-column: 9/10;
-grid-row: 4/5;
-}
-
-.texto-produto {
-margin-top: 5px;
-margin-bottom: 5px;
-text-align: center;
-
-}
-
-.produtos-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-}
-
-/* ---------- O FOOTER ---------- */
-
-footer{
-background-color: rgba(254,145,76,255);
-height: 12vh;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0.4em;
-margin-top: 60px;
-}
-
-.rodape-pagina{
-display: grid;
-grid-template-rows: auto 1fr auto;
-justify-content: center;
-align-items: center;
-
-}
-
-.logo-banco{
-height: 12vh;
-}
-
-.icone-redes{
-height: 1.2em;
-margin-right: 30px;
-
-}
-
-.icones{
-display: grid;
-align-items: center;
-
-}
-
-/* ------------------------------------------------------------- */
+    
