@@ -1,0 +1,97 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body{
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   min-height: 100vh;
+}
+ 
+footer{
+   background-color: rgba(254,145,76,255);
+   height: 12vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0.4em;
+}
+
+.rodape-pagina{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-banco{
+  height: 12vh;
+}
+
+.icone-redes{
+  height: 1.2em;
+
+}
+
+.icones{
+   display: grid;
+   align-items: center;
+   
+}
+
+
+.cabecalho-banco{
+  background-color: rgba(254,145,76,255);
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.body-pg2{
+  background-image: url(./img/cropped-shot-of-african-american-businessman-paying-with-credit-card-online.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  }
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-pedido{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: 12em;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 4px 4px 10px rgba(254,145,76,255);
+  text-align: center;
+  border-radius: 2em;
+  
+}
+
+.botao-card{
+   background-color: rgba(254,145,76,255);
+   padding: 0.5em;
+   border-radius: 15%;
+   
+}
+
+.botao-card:hover{
+   background-color: #33adff;
+   color: white;
+}
