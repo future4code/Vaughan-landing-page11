@@ -17,3 +17,36 @@ Nome dos integrantes:
 
 ## Descrição: 
 ### Projeto de Landing Page de banco, baseado no site do NuBank.
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/paulolopest">
+        <img src="https://avatars.githubusercontent.com/u/94811899?v=4" width="100px;" alt="Foto do Paulo no GitHub"/><br>
+        <sub>
+          <b>Paulo Tarso</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/gvallef">
+        <img src="https://avatars.githubusercontent.com/u/59378360?v=4" width="100px;" alt="Foto do Gabriel no GitHub"/><br>
+        <sub>
+          <b>Gabriel Ferreira</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/mdudapires">
+        <img src="https://avatars.githubusercontent.com/u/90624608?v=4" width="100px;" alt="Foto da Eduarda no GitHub"/><br>
+        <sub>
+          <b>Jardel Santos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
