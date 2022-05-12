@@ -44,7 +44,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="https://github.com/mdudapires">
         <img src="https://avatars.githubusercontent.com/u/90624608?v=4" width="100px;" alt="Foto da Eduarda no GitHub"/><br>
         <sub>
-          <b>Jardel Santos</b>
+          <b>Eduarda Pires</b>
         </sub>
       </a>
     </td>
